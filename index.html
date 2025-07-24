@@ -69,7 +69,7 @@
     }
 
     ul li::before {
-      content: "• ";
+      content: "\2022 ";
       color: #ff6f00;
     }
 
@@ -90,6 +90,16 @@
       background-color: #282828;
     }
 
+    .repairs-list {
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+
+    .repairs-list li {
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 2em;
@@ -104,25 +114,21 @@
 </head>
 <body>
   <div style="text-align: right; padding: 1rem; font-size: 0.9rem;">
-    <a href="https://piston-pals.vercel.app">🇬🇧 <strong>English</strong> </a> |
+    <a href="https://piston-pals.vercel.app">🇬🇧 <strong>English</strong></a> |
     <a href="https://pistonpals-gr.vercel.app">🇬🇷 Ελληνικά</a> |
     <a href="https://pistonpals-bg.vercel.app">🇧🇬 Български</a>
   </div>
+
   <header>
     <h1>PistonPals.net</h1>
     <p>Your Pit Stop For Satsuma Repairs</p>
   </header>
 
   <main>
-
     <h2>Need a Fix?</h2>
     <p>Upload your broken Satsuma My Summer Car save and let us take a look!</p>
-    <a class="button" href="https://forms.gle/VDC9i5etyKtmW1cY6" target="_blank">
-      Upload Save File
-    </a>
-    <a class="button" href="https://forms.gle/aPJUzBheyWYouBsYA" target="_blank">
-      Contact Us
-    </a>
+    <a class="button" href="https://forms.gle/VDC9i5etyKtmW1cY6" target="_blank">Upload Save File</a>
+    <a class="button" href="https://forms.gle/aPJUzBheyWYouBsYA" target="_blank">Contact Us</a>
 
     <h2>About PistonPals</h2>
     <p>We’re a fan project that helps players repair broken or corrupted saves in <strong>My Summer Car</strong>. Whether your engine’s missing or your car’s possessed, we’ll take a look and do our best to bring it back.</p>
@@ -140,35 +146,44 @@
       <li>✅ Engine missing or messed up</li>
       <li>✅ Car won’t start or drive</li>
       <li>✅ Wiring or assembly problems</li>
-      <li>❌ We do not install game mods. Only Satsuma mods
-        
+      <li>❌ We do not install game mods. Only Satsuma mods</li>
+    </ul>
+
     <h2>FAQ</h2>
     <p><strong>How long does it take?</strong><br>It depends. If you need a rebuild, it will take 1 to 2 hours. If it is a easy fix, it will take either from 20-55 minutes.</p>
     <p><strong>Will I lose progress?</strong><br>No. We aim to keep everything the same unless you ask for something changed.</p>
     <p><strong>Are the services free?</strong><br>Yes, the services are free because this is a fanmade project.</p>
-        
-<section id="team" style="padding: 2rem; background-color: #00000;">
-  <h2 style="text-align: center;">Meet the Team</h2>
-  <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 2rem;">
-    <div style="display: flex; align-items: center; background: white; padding: 1rem 2rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 600px;">
-      <img src="https://www.tuned1.at/wp-content/uploads/2024/09/bmw_e38_diesel_daily_bbs_tuned1_03-1536x1025.jpg" alt="Konstantin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-right: 1.5rem;">
-      <div>
-        <h3 style="margin: 0;">Konstantin</h3>
-        <p style="margin: 4px 0;"><strong>Owner & Only Worker 🛠️</strong></p>
-        <p style="margin: 0; font-size: 0.9rem; color: gray;">
-          Hi! I’m Konstantin, the owner of PistonPals — and... the only worker TT.<br>
-          Whether your Satsuma’s cursed, broken, or just <em>vanished</em>, I’ll patch it up and get you back on the road.
-        </p>
+
+    <section id="team" style="padding: 2rem;">
+      <h2 style="text-align: center;">Meet the Team</h2>
+      <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 2rem;">
+        <div style="display: flex; align-items: center; background: white; padding: 1rem 2rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 600px;">
+          <img src="https://www.tuned1.at/wp-content/uploads/2024/09/bmw_e38_diesel_daily_bbs_tuned1_03-1536x1025.jpg" alt="Konstantin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-right: 1.5rem;">
+          <div>
+            <h3 style="margin: 0; color: black;">Konstantin</h3>
+            <p style="margin: 4px 0; color: black;"><strong>Owner & Only Worker 🛠️</strong></p>
+            <p style="margin: 0; font-size: 0.9rem; color: gray;">
+              Hi! I’m Konstantin, the owner of PistonPals — and... the only worker TT.<br>
+              Whether your Satsuma’s cursed, broken, or just <em>vanished</em>, I’ll patch it up and get you back on the road.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-        
+    </section>
+
+    <section id="repairs" style="padding: 2rem;">
+      <h2>🛠️ Recent Repairs</h2>
+      <ul class="repairs-list">
+        <li><strong>Player1:</strong> Fixed no-engine issue, restored wiring</li>
+        <li><strong>Player2:</strong> Reassembled front suspension</li>
+        <li><strong>Player3:</strong> Fixed floating Satsuma bug</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
     <p>&copy; Piston Pals 2025. Not affiliated with Amistech Games.</p>
   </footer>
-
 </body>
 </html>
+

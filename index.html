@@ -1,203 +1,235 @@
 <!DOCTYPE html>
 <html>
-  <! psst. hey. you found a secret code to give to people who fix your satsuma to make it tuned. the code is H482K. </!>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PistonPals - MSC Service</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-image: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/header.jpg?t=1736372299");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 40px 25px;
-      text-align: center;
-      color: white;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    main {
-      display: grid;
-      grid-template-areas:
-        "title title"
-        "info repairs"
-        "info repairs"
-        "buttons buttons"
-        "footer footer";
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .title {
-      grid-area: title;
-      text-align: center;
-    }
-
-    .info {
-      grid-area: info;
-    }
-
-    .repairs {
-      grid-area: repairs;
-    }
-
-    .buttons {
-      grid-area: buttons;
-      text-align: center;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 25px;
-      background-color: #1414B8;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    .buttons a:hover {
-      background-color: #050554;
-    }
-
-    .repairs-list li {
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      grid-area: footer;
-      margin-top: 50px;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #aaaaaa;
-      background-color: #282828;
-      text-align: center;
-    }
-
-    .info-tab {
-      margin-top: 40px;
-      padding: 15px;
-      border: 1px solid #444;
-      border-radius: 8px;
-      background-color: #2a2a2a;
-    }
-
-    @media (max-width: 768px) {
-      main {
-        grid-template-areas:
-          "title"
-          "info"
-          "repairs"
-          "buttons"
-          "footer";
-        grid-template-columns: 1fr;
+  <! psst. hey. you found a secret code to give to the person who fix your satsuma to make it tuned. the code is H482K. </!>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PistonPals - MSC Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1e1e1e;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
       }
-    }
-  </style>
-</head>
-<body>
-  <div style="text-align: right; padding: 1rem; font-size: 0.9rem;">
-    <a href="https://piston-pals.vercel.app">🇬🇧 <strong>English</strong> </a> |
-    <a href="https://pistonpals-gr.vercel.app">🇬🇷 Ελληνικά</a> |
-    <a href="https://pistonpals-bg.vercel.app">🇧🇬 Български </a>
-  </div>
 
-  <header>
-    <h1>PistonPals.net</h1>
-    <p>Your Pit Stop For Satsuma Repairs</p>
-  </header>
+      header {
+        background-image: url("https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/516750/header.jpg?t=1736372299");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 40px 25px;
+        text-align: center;
+        color: white;
+      }
 
-  <main>
-    <section class="title">
-      <h2>Need a repair??</h2>
-      <p>Upload your save file below.</p>
-    </section>
+      
+      header h1,
+      header p {
+        color: white;
+        text-shadow: 1px 1px 4px black;
+      }
 
-    <section class="info">
-      <h3>About PistonPals</h3>
-      <p>PistonPals is a fan project made with the idea for the people behind PistonPals to help people by fixing their Satsumas for them. Whether your Satsuma is broken or possessed, we will patch it up and put you back on the road.</p>
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
 
-      <h3>How It Works</h3>
-      <ol>
-        <li>Upload your save, then give us some details.</li>
-        <li>Contact us if you would like to provide more details. </li>
-        <li>We will check your Satsuma and fix it for you.</li>
-        <li>You will get your updated save via Email or where you have texted us if you provided us more details.</li>
-      </ol>
-  <section class="buttons">
-        <a href="https://forms.gle/VDC9i5etyKtmW1cY6" target="_blank">
-          <i class="fas fa-upload"></i> Upload save
-        </a>
-        <a href="https://forms.gle/aPJUzBheyWYouBsYA" target="_blank">
-          <i class="fas fa-envelope"></i> Contact Us
-        </a>
+      main {
+        display: grid;
+        grid-template-areas:
+          "title title"
+          "info repairs"
+          "info repairs"
+          "buttons buttons"
+          "footer footer";
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 30px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .title {
+        grid-area: title;
+        text-align: center;
+      }
+
+      .info {
+        grid-area: info;
+      }
+
+      .repairs {
+        grid-area: repairs;
+      }
+
+      .buttons {
+        grid-area: buttons;
+        text-align: center;
+      }
+
+      .buttons a {
+        display: inline-block;
+        margin: 10px;
+        padding: 15px 25px;
+        background-color: #1414B8;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+      }
+
+      .buttons a:hover {
+        background-color: #050554;
+      }
+
+      .repairs-list li {
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        grid-area: footer;
+        margin-top: 50px;
+        padding: 20px;
+        font-size: 0.9em;
+        color: #aaaaaa;
+        background-color: #282828;
+        text-align: center;
+      }
+
+      .info-tab {
+        margin-top: 40px;
+        padding: 15px;
+        border: 1px solid #444;
+        border-radius: 8px;
+        background-color: #2a2a2a;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          grid-template-areas:
+            "title"
+            "info"
+            "repairs"
+            "buttons"
+            "footer";
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: right; padding: 1rem; font-size: 0.9rem;">
+      <a href="https://piston-pals.vercel.app">🇬🇧 <strong>English</strong> </a> |
+      <a href="https://pistonpals-gr.vercel.app">🇬🇷 Ελληνικά</a> |
+      <a href="https://pistonpals-bg.vercel.app">🇧🇬 Български </a>
+    </div>
+
+    <header>
+      <h1>PistonPals.net</h1>
+      <p>Your Pit Stop For Satsuma Repairs</p>
+    </header>
+
+    <main>
+      <section class="title">
+        <h2>Need a repair??</h2>
+        <p>Upload your save file below.</p>
       </section>
 
-      <h3>What We Fix</h3>
-      <ul>
-        <li>✅ Missing or money-shifted engine</li>
-        <li>✅ Engine doesn't start or Satsuma doesn't move</li>
-        <li>✅ Wiring or assembly problems</li>
-        <li>❌ We do not install game mods for you, because we do not get access to your game files. We can tune your Satsuma.
-        <li>✅We can give you mod links or zips for mods which are off websites.
-      </ul>
+      <section class="info">
+        <h3>About PistonPals</h3>
+        <p>PistonPals is a fan project made with the idea for the people behind PistonPals to help people by fixing their Satsumas for them. Whether your Satsuma is broken or possessed, we will patch it up and put you back on the road.</p>
 
-      <h3>FAQ (frequently asked questions)</h3>
-      <p><strong>How much time does it take?</strong><br>It depends. If you need a engine rebuild, it will take 1-2 hours. If it is a easy fix, it will be 10-40</p>
-      <p><strong>Will I lose my progress?</strong><br>No. We are keen to not changing anything on your save, only if you say so.</p>
-      <p><strong>Are the services free?</strong></strong><br>Yes. This is just something we do to help the <strong> My Summer Car </strong> community.
+        <h3>How It Works</h3>
+        <ol>
+          <li>Upload your save, then give us some details.</li>
+          <li>Contact us if you would like to provide more details.</li>
+          <li>We will check your Satsuma and fix it for you.</li>
+          <li>You will get your updated save via Email or where you have texted us if you provided us more details.</li>
+        </ol>
+
+        <section class="buttons">
+          <a href="https://forms.gle/VDC9i5etyKtmW1cY6" target="_blank">
+            <i class="fas fa-upload"></i> Upload save
+          </a>
+          <a href="https://forms.gle/aPJUzBheyWYouBsYA" target="_blank">
+            <i class="fas fa-envelope"></i> Contact Us
+          </a>
+        </section>
+
+        <h3>What We Fix</h3>
+        <ul>
+          <li>✅ Missing or money-shifted engine</li>
+          <li>✅ Engine doesn't start or Satsuma doesn't move</li>
+          <li>✅ Wiring or assembly problems</li>
+          <li>❌ We do not install game mods for you, because we do not get access to your game files. We can tune your Satsuma.</li>
+          <li>✅We can give you mod links or zips for mods which are off websites.</li>
+        </ul>
+
+        <h3>FAQ (frequently asked questions)</h3>
+        <p><strong>How much time does it take?</strong><br>It depends. If you need an engine rebuild, it will take 1–2 hours. If it is an easy fix, it will be 10–40 mins.</p>
+        <p><strong>Will I lose my progress?</strong><br>No. We are keen to not change anything on your save, only if you say so.</p>
+        <p><strong>Are the services free?</strong><br>Yes. This is just something we do to help the <strong>My Summer Car</strong> community.</p>
+
         <h3>ℹ️ More Information</h3>
         <img src="https://www.overtake.gg/attachments/picx1-min-png.679036/" alt="Satsuma car" style="height: 80px; border-radius: 20px;">
-        </div>
-        <p> This is a site made for people to contact people to fix their satsumas for them. 
+        <p>This is a site made for people to contact people to fix their Satsumas for them.
           If you do not know what My Summer Car is, it is a game based on Unity, about mechanicing. You are 19 years old, and live in Finland.
-          The point of the game is.. to suffer. And to build a rally car!
+          The point of the game is... to suffer. And to build a rally car!
         </p>
-        <p>The develepor made My Summer Car with the idea of suffering and Finland's love of rally racing! 
-          You have: thirst; hunger; stress ;urine. Your parents have gone on a vacation to an island called Tenerife. 
+        <p>The developer made My Summer Car with the idea of suffering and Finland's love of rally racing! 
+          You have: thirst; hunger; stress; urine. Your parents have gone on a vacation to an island called Tenerife. 
           Without you. And because it is 1995, there is no Instagram, TikTok, or whatever social medias.
-          So the only way to pass the time is to build your fathers old car - a Datsun 100-A (Called Satsuma in MSC). From the bare. Chassis. 
-          Yes, It will be hard work, but there will be happines or pride if the car starts.
+          So the only way to pass the time is to build your father’s old car — a Datsun 100-A (called Satsuma in MSC). From the bare chassis. 
+          Yes, it will be hard work, but there will be happiness or pride if the car starts.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section class="repairs">
-      <h3>🛠️ Recent Repairs (Live 🔴)</h3>
-      <iframe src="https://docs.google.com/spreadsheets/d/149urUZSzzsN4rnyYypLEC3-IWM_Y_75JRYVtEaui6xQ" width="100%" height="400" frameborder="0" style="border-radius: 10px; overflow: hidden;"></iframe>
+      <section class="repairs">
+        <h3>🛠️ Recent Repairs (Live 🔴)</h3>
+        <iframe src="https://docs.google.com/spreadsheets/d/149urUZSzzsN4rnyYypLEC3-IWM_Y_75JRYVtEaui6xQ" width="100%" height="400" frameborder="0" style="border-radius: 10px; overflow: hidden;"></iframe>
 
-      <h3>Meet The Team</h3>
-      <div style="display: flex; align-items: center; background: white; padding: 1rem; border-radius: 12px; max-width: 600px; margin-top: 1rem;">
-        <img src="https://www.tuned1.at/wp-content/uploads/2024/09/bmw_e38_diesel_daily_bbs_tuned1_03-1536x1025.jpg" alt="Konstantin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-right: 1rem;">
-        <div>
-          <h4 style="margin: 0; color: black;">Konstantin</h4>
-          <p style="margin: 0; font-size: 0.9rem; color: gray;">Owner and only worker 🛠️</p>
-          <p style="font-size: 0.9rem; color: gray;">Hello! I am Konstantin, the owner and founder of PistonPals — 
-            and the only worker. 😢<br> Whether your Satsuma is broken, possesed, or has just... <em>vanished</em, I will patch it up and get you back on the roads!</p>
+        <h3>Meet The Team</h3>
+        <div style="display: flex; align-items: center; background: white; padding: 1rem; border-radius: 12px; max-width: 600px; margin-top: 1rem;">
+          <img src="https://www.tuned1.at/wp-content/uploads/2024/09/bmw_e38_diesel_daily_bbs_tuned1_03-1536x1025.jpg" alt="Konstantin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-right: 1rem;">
+          <div>
+            <h4 style="margin: 0; color: black;">Konstantin</h4>
+            <p style="margin: 0; font-size: 0.9rem; color: gray;">Owner and only worker 🛠️</p>
+            <p style="font-size: 0.9rem; color: gray;">Hello! I am Konstantin, the owner and founder of PistonPals — 
+              and the only worker. 😢<br> Whether your Satsuma is broken, possessed, or has just... <em>vanished</em>, I will patch it up and get you back on the roads!</p>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+    <section class="comments">
+  <h3>💬 Leave a Comment</h3>
+  <p>Want to say thanks, give feedback, or just vibe with us? Drop a comment below!</p>
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSeBrKJJEDh9u_iLwNRctddKvdETqzvYzAO8y_sgdVHTjEn6Nw/viewform?embedded=true" 
+    width="100%" 
+    height="500" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0" 
+    style="border-radius: 12px;">
+    Loading…
+  </iframe>
 
-  <footer>
-    <p>&copy; Piston Pals 2025. We are not affiliated with Amistech Games whatsoever.</p>
-  </footer>
-</body>
+  <h3>🗣️ Recent Comments</h3>
+  <iframe 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8mhHJwH1ZtBPYIdglPnbcFrFMh4V4knLOAgEdzYTYvcxuDqfFtNTllVRUymX_iQ/pubhtml?widget=true&amp;headers=false" 
+    width="100%" 
+    height="400" 
+    frameborder="0" 
+    style="border-radius: 12px; overflow: hidden;">
+  </iframe>
+</section>
+
+
+    <footer>
+      <p>&copy; Piston Pals 2025. We are not affiliated with Amistech Games whatsoever.</p>
+    </footer>
+  </body>
 </html>
